@@ -1,0 +1,48 @@
+body {
+  background: rgb(255, 232, 211);
+}
+
+h1 {
+  margin-left: 30px;
+  color: rgb(75, 46, 67);
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: rgb(75, 46, 67);
+}
+
+.result {
+  background: white;
+  padding: 5px 20px;
+  margin: 10px;
+  border: 2px solid rgb(75, 46, 67);
+  border-radius: 20px;
+}
+
+.loading {
+  margin-left: 10px;
+  border: 20px solid white;
+  border-radius: 50%;
+  border-top: 20px solid rgb(80, 61, 80);
+  width: 120px;
+  height: 120px;
+  animation: spinner 3s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: darkred;
+  border: 1px solid darkred;
+  background-color: rgb(255, 219, 219);
+  padding: 10px;
+}
